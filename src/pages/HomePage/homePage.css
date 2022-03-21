@@ -1,0 +1,34 @@
+.home{
+    
+}
+
+.home-category{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-box{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background-color: rgb(212, 212, 214);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.hone-box img{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.home-box-title{
+    position:absolute;
+    top: 15;
+    left: 10px;
+}
+.home-box-text{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}

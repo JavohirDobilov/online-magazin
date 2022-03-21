@@ -1,23 +1,17 @@
 import React from "react";
-import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
-import HomePage from "./components/HomePage";
-import Header from "./components/Header";
-import ProductList from "./components/ProductList";
-import ProductDetails from "./components/ProductDetails";
 import './App.css';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage/HomePage";
+import ProductCard from "./components/ProductCard/ProductCard";
 
 function App() {
   return (
     <>
-      
-      <Router>
-      <Header/>
-        <Routes>
-           <Route path = "/" exact element = {<ProductList />} />
-           {/* <Route path = "/about" exact element = {<About />} />
-           <Route path = "/about" exact element = {<Contact />} /> */}
-        </Routes>
-      </Router>
+      {/* <Header/>
+      <HomePage/>
+      <Footer/> */}
+      <ProductCard/>
     </>
   );
 }

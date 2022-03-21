@@ -1,0 +1,34 @@
+.card{
+    position: relative;
+    width: 200px;
+    height: 210px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+.product-icon-favorite img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+.product-card-novinka{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #9B83FC;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+.product-image img{
+    position: absolute;
+    top: 0;
+    right: -5%;
+    width: 220px;
+    object-fit: contain;
+}

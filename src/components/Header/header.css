@@ -1,0 +1,290 @@
+.header{
+    color: #000;
+    
+}
+.container{
+    width: 1320px;
+    margin: auto;
+}
+
+.header_notification{
+    background-color: #9B83FC;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-icon-truck{
+    display: flex;
+    align-items: center;
+
+}
+.header-truck-text{
+    color: white;
+    padding: 0px 10px 0px;
+}
+.header-two{
+    background-color: #f9f8fc;
+    height: 36px;
+    align-items: center;
+}
+.header_location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-location-text{
+    color: #383838;
+    
+}
+.header-two .location-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-location-icon-title{
+    color: #383838;
+    padding: 0px 10px;
+}
+.header-icon-message img{
+    padding: 0px 0px 0px 40px;
+}
+.header-location-message-title{
+    color: #383838;
+    padding: 0px 10px;
+}
+.header-three{
+    padding: 8px 10px;
+    align-items: center;
+}
+.header-three-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-three-logo img{
+    object-fit: contain;
+    height: 60px;
+}
+.header-katalog-btn{
+    background-color: #9B83FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-katalog-btn  img{
+    padding: 8px 10px 10px 20px;
+}
+.catalog-menu-title{
+    padding: 8px 20px 10px 0px;
+    color: white;
+}
+.header-search{
+    padding: 0px 0px 0px 20px;
+    position: relative;
+}
+
+.header-search input{
+    
+    width: 500px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f9f8fc;
+    height: 36px;
+    outline: none;
+}
+.header-search img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.header-tel{
+
+}
+.header-icon-favorite img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.header-icon-cart img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.header-icon-user img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.header-fourth{
+    padding: 10px 0;
+}
+.navbar-link{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.navbar-link a{
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #383838;
+    list-style: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.nav-link.active a{
+    padding: 6px 10px;
+    background-color: #9B83FC;
+    color: white;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (min-width:1400px){
+    .container{
+        width: 1360px;
+        margin: auto;
+    }
+    .header{
+        color: #000;
+        
+    }
+    
+    
+    .header_notification{
+        background-color: #9B83FC;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-icon-truck{
+        display: flex;
+        align-items: center;
+    
+    }
+    .header-truck-text{
+        color: white;
+        padding: 0px 10px 0px;
+    }
+    
+    .header-two{
+        background-color: #f6f4fa;
+        height: 34px;
+    }
+    .header_location{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .header-location-text{
+        color: #383838;
+        
+    }
+    .header-two .location-h{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-location-icon-title{
+        padding: 0px 10px;
+    }
+    .header-icon-message img{
+        padding: 0px 0px 0px 40px;
+    }
+    .header-location-message-title{
+        color: #383838;
+        padding: 0px 10px;
+    }
+    .header-three{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-three-logo img{
+        object-fit: contain;
+        height: 60px;
+    }
+    .header-katalog-btn{
+        background-color: #9B83FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .header-katalog-btn  img{
+        padding: 8px 10px 10px 20px;
+    }
+    .catalog-menu-title{
+        padding: 8px 20px 10px 0px;
+        color: white;
+    }
+    .header-search{
+        padding: 0px 0px 0px 20px;
+        position: relative;
+    }
+    
+    .header-search input{
+        
+        width: 500px;
+        border-radius: 6px;
+        border: none;
+        background-color: #f9f8fc;
+        height: 42px;
+    }
+    .header-search img{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .header-tel{
+    
+    }
+    .header-icon-favorite img{
+        width: 26px;
+        height: 26px;
+    }
+    .header-icon-cart img{
+        width: 26px;
+        height: 26px;
+    }
+    .header-icon-user img{
+        width: 26px;
+        height: 26px;
+    }
+} */
