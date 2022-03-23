@@ -1,5 +1,6 @@
 .footer{
     background-color: #F7F7F7;
+    padding: 14px;
 }
 
 
@@ -45,14 +46,14 @@
     justify-content: space-between;
 }
 .footer-link-text-1{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
     cursor: pointer;
 }
 .footer-link-text-2{
     padding: 4px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #646464;
     cursor: pointer;

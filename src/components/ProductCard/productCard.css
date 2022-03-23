@@ -1,19 +1,19 @@
 .card{
     position: relative;
-    width: 200px;
-    height: 210px;
-    background-color: #f1f1f1;
+    width: 240px;
+    height: 230px;
+    background-color: #fafafa;
     border-radius: 8px;
 }
 .product-icon-favorite img{
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     top: 5px;
     right: 5px;
     background-color: white;
     border-radius: 50%;
-    padding: 4px;
+    padding:4px;
 }
 .product-card-novinka{
     position: absolute;
@@ -28,7 +28,39 @@
 .product-image img{
     position: absolute;
     top: 0;
-    right: -5%;
+    right: 2%;
     width: 220px;
+    height: 200px;
     object-fit: contain;
 }
+.product-stars{
+    position: absolute;
+    left: 3px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.product-title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.product-price{
+    color: rgb(131, 36, 255);
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.product-prices{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+.product-oldprice{
+    text-decoration-line: line-through;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8d9687;
+}
+

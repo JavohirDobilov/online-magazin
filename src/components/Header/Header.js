@@ -32,7 +32,7 @@ const Header = () => {
                 </div>
             </div>
           
-                <div className="header-two">
+                {/* <div className="header-two">
                     <div className="container">
                         <div className="header_location">
                             <div className="header-location-text">kharkivmebel - интернет-магазин качественной мебели</div>
@@ -49,7 +49,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-         
+          */}
 
             <div className="header-three">
 

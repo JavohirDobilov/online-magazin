@@ -1,0 +1,43 @@
+.aksiya{
+    background-color: #F7F7F7;
+    border-radius: 4px;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+.aksiya-box{
+    padding: 16px 20px;
+}
+.aksiya-row{
+    display: flex;
+    justify-content: space-between;
+}
+.aksiya-content{
+    width: 200px;
+    margin-top: 20px;
+
+}
+.aksiya-text{
+    padding: 10px 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.aksiya-button{
+    background-color: #9B83FC;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+}
+.aksiya-button img{
+    padding-left: 10px;
+}
+.aksiya-image img{
+    height: 200px;
+    padding: 0 10px;
+    object-fit: contain;
+    /* object-fit: contain; */
+}
