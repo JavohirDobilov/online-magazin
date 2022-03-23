@@ -1,6 +1,7 @@
 import React from 'react'
 import "../ProductCard/productCard.css";
 import like from '../../img/like3.svg';
+import cart from '../../img/Buy 2.svg';
 import product1 from '../../img/rectangle.png';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 
@@ -14,6 +15,10 @@ const ProductCard = ({ product }) => {
                 <div className='product-icon-favorite'>
                     <img src={like} />
                 </div>
+                <div className='product-icon-cart'>
+                    <img src={cart} />
+                </div>
+            
                 <div className='product-image'>
                     <img src={product.image} />
                 </div>

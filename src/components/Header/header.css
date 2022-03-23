@@ -1,6 +1,17 @@
 .header{
     color: #000;
+    transition: 0.9s ease;
+    width: 100%;
     
+    z-index: 2;
+    
+}
+.header-scroll{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #f0f0f0;
+    z-index: 1;
 }
 .container{
     width: 1320px;
@@ -8,7 +19,7 @@
 }
 
 .header_notification{
-    background-color:#8c75f5;
+    background-color: #9B83FC;
     height: 34px;
     display: flex;
     justify-content: center;
@@ -20,8 +31,9 @@
 
 }
 .header-truck-text{
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 0px 10px 0px;
+    font-size: 14px;
 }
 .header-two{
     background-color: #f9f8fc;
@@ -144,6 +156,7 @@
     color: white;
     border-radius: 6px;
 }
+
 
 
 

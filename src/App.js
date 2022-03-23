@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -7,9 +7,20 @@ import ProductCard from "./components/ProductCard/ProductCard";
 import Aksiya from "./components/Aksiya/Aksiya"
 
 function App() {
+
+  const [scroll, setScroll] = useState(false)
+
+  useLayoutEffect(()=>{
+    const handleScroll =()=> {
+      setScroll(window.scrollY>140)
+    }
+    window.addEventListener("scroll", handleScroll)
+
+    return () =>window.removeEventListener("scroll", handleScroll)
+  },[])
   return (
     <>
-      <Header/>
+      <Header scroll={scroll}/>
       <HomePage/>
       <Footer/>
     </>

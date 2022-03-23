@@ -1,0 +1,73 @@
+.podrasilka{
+    margin: 40px 0;
+}
+
+
+.podrasilka-box{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #9B83FC;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pod-icon1 img{
+    position: absolute;
+    top: -18px;
+    left: -10px;
+    width: 80px;
+    height: 80px;
+}
+.pod-icon2 img{
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 100px;
+    height: 100px;
+}
+.podrasilka-title1{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.podrasilka-title2{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+.podrasilka-box-input-content{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.podpisatsiya-title{
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.podrasilka-click{
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    background-color: #383838;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.podrasilka-click:hover{
+    background-color:#2f00ec;
+}
+.podrasilka-input input{
+    width: 400px;
+    height: 34px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}

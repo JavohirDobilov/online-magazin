@@ -15,7 +15,8 @@ import next from "../../img/left3.svg"
 // import xitpro1 from "../../img/xitpro/1.png"
 import xitpro2 from "../../img/xitpro/2.png"
 import xitpro3 from "../../img/xitpro/3.png"
-import xitpro4 from "../../img/xitpro/4.png"
+import xitpro4 from "../../img/xitpro/3.png"
+import Podrasilka from '../../components/PodRasilkaFooter/Podrasilka'
 
 const HomePage = () => {
     const [xitpage, setXitPage] = useState(1)
@@ -183,98 +184,7 @@ const HomePage = () => {
                 <div className='home-catalog-title'>
                     Каталог
                 </div>
-                <div className='home-category'>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Столы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image2} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Кровати
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image3} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Тумбы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image4} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Шкафы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image5} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Столы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image6} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Диваны
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image7} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Столы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image2} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Столы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image3} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Столы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image4} />
-                    </div>
-                    <div className='home-box'>
-                        <div className='home-box-title'>
-                            Столы
-                        </div>
-                        <div className='home-box-text'>
-                            80шт
-                        </div>
-                        <img src={image5} />
-                    </div>
-                </div>
+               
 
 
                 <div className='home-xit-prodaj'>
@@ -328,20 +238,20 @@ const HomePage = () => {
                 </div>
 
                 <div className='home-aksiya-content'>
-                    <div className='home-akisya-content-title'>
+                    <div className='home-aksiya-content-title'>
                         Новости и акции
                     </div>
                     <div className='home-aksiya-content-box'>
                         <div className='home-aksiya-content-box-1'>
                             <Aksiya />
                         </div>
-                        <div className='home-aksiya-content-box-1'>
-                            <Aksiya />
-                        </div>
                     </div>
                 </div>
 
+                <Podrasilka/>
+
             </div>
+           
         </div>
     )
 }

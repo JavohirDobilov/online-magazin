@@ -3,6 +3,21 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+body::-webkit-scrollbar-track{ 
+  background:#e0cffa; 
+ 
+} 
+
+body::-webkit-scrollbar{ 
+  width: 10px; 
+  
+  padding: 0 1px; 
+  background-color: #c2f5d6; 
+} 
+body::-webkit-scrollbar-thumb{ 
+  background-color: #1a86da;
+  border-radius: 10px;
+}
 .App {
   text-align: center;
 }

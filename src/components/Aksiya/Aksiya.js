@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Aksiya/aksiya.css"
-import aksiyaImg from "../../img/image 8.svg"
+import aksiyaImg from "../../img/xitpro/AppleNaushnik.png"
 import arrow from "../../img/arrow.svg"
 
 const Aksiya = () => {
@@ -10,11 +10,11 @@ const Aksiya = () => {
                 <div className='aksiya-row'>
                     <div className='aksiya-content'>
                         <div className='aksiya-title'>
-                            Коллекция
+                            Акции
                         </div>
                         <div className='aksiya-text'>
-                            Новый Стул
-                            Denim Green
+                            Apple Airpods
+                            Denim White color   
                         </div>
                         <div className='aksiya-button'>
                             Показать Все

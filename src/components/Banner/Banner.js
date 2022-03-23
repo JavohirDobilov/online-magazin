@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../Banner/banner.css"
-import slider1 from "../../img/bannerItem3.jpg"
+import slider1 from "../../img/bannerMask2.png"
 import slider2 from "../../img/ban.jpeg"
 import prev from "../../img/left2.svg"
 import next from "../../img/left3.svg"
@@ -11,39 +11,39 @@ const Banner = () => {
   const bannerItems = [
     {
       id: 1,
-      title: "Финальная распродажа",
-      text: "Только 30 моделей можно забрать домой со скидкой до 45%",
+      title: "Большой выбор стиральных машин",
+      text: "Успей купить по суперцене",
       image: slider1
     },
     {
       id: 2,
-      title: "Финальная распродажа",
-      text: "Только 30 моделей можно забрать домой со скидкой до 45%",
-      image: slider2
+      title: "Большой выбор стиральных машин",
+      text: "Успей купить по суперцене",
+      image: slider1
     },
     {
       id: 3,
-      title: "Финальная распродажа",
-      text: "Только 30 моделей можно забрать домой со скидкой до 45%",
+      title: "Большой выбор стиральных машин",
+      text: "Успей купить по суперцене",
       image: slider1
     },
     {
       id: 4,
-      title: "jФинальная распродажа",
-      text: "Только 30 моделей можно забрать домой со скидкой до 45%",
-      image: slider2
+      title: "Большой выбор стиральных машин",
+      text: "Успей купить по суперцене",
+      image: slider1
     },
     {
       id: 5,
-      title: "Финальная распродажа",
-      text: "Только 30 моделей можно забрать домой со скидкой до 45%",
+      title: "Большой выбор стиральных машин",
+      text: "Успей купить по суперцене",
       image: slider1
     },
     {
       id: 6,
-      title: "Финальная распродажа",
-      text: "Только 30 моделей можно забрать домой со скидкой до 45%",
-      image: slider2
+      title: "Большой выбор стиральных машин",
+      text: "Успей купить по суперцене",
+      image: slider1
     },
 
   ]
@@ -69,6 +69,12 @@ const Banner = () => {
                   <img src={item.image} />
                 </div>
               </div>
+              <div className='banner-content-title'>
+                {item.title}
+              </div>
+              <div className='banner-content-text'>
+                {item.text}
+              </div>
             </div>
           ))}
         </div>
@@ -79,7 +85,7 @@ const Banner = () => {
         </div>
         <div className='banner-prev-next-slider'>
           <div className='banner-prev'>
-            <button className="banner-prev-style" onClick={() => page > 0 && setPage(page - 1)}>
+            <button className="banner-prev-style" onClick={() => page > 1 && setPage(page - 1)}>
               <div className='banner-prev-icon'>
                 <img src={prev} />
               </div>

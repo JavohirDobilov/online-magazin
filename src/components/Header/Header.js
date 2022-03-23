@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import truck from "../../img/truck.svg";
 import message from '../../img/message.svg';
 import location from '../../img/Location.svg';
-import logo from '../../img/logo2.svg';
+import logo from '../../img/logoExp.svg';
 import menu from '../../img/menu.svg';
 import search from '../../img/searches.svg';
 import like from '../../img/like.svg';
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Header = () => {
+const Header = ({ scroll }) => {
 
     const [navbtn, setNavBtn] = useState(1);
     return (
@@ -31,8 +31,8 @@ const Header = () => {
 
                 </div>
             </div>
-          
-                {/* <div className="header-two">
+
+            {/* <div className="header-two">
                     <div className="container">
                         <div className="header_location">
                             <div className="header-location-text">kharkivmebel - интернет-магазин качественной мебели</div>
@@ -51,73 +51,111 @@ const Header = () => {
                 </div>
           */}
 
-            <div className="header-three">
+            {scroll ?
+                <div className="header-scroll">
+                    <div className="header-three">
 
-                <div className="container">
-                    <div className="header-three-flex">
-                    <div className="header-three-logo">
-                        <img src={logo} />
-                    </div>
-                    <div className="header-katalog-btn">
-                        <img src={menu} />
-                        <div className="catalog-menu-title">Каталог</div>
-                    </div>
-                    <div className="header-search">
-                        <input type="text" />
-                        <img src={search} />
-                    </div>
-                    <div className="header-tel">
-                        +38093-717-29-29
-                    </div>
+                        <div className="container">
+                            <div className="header-three-flex">
+                                <div className="header-three-logo">
+                                    <img src={logo} />
+                                </div>
+                                <div className="header-katalog-btn">
+                                    <img src={menu} />
+                                    <div className="catalog-menu-title">Каталог</div>
+                                </div>
+                                <div className="header-search">
+                                    <input type="text" />
+                                    <img src={search} />
+                                </div>
+                                <div className="header-tel">
+                                    +38093-717-29-29
+                                </div>
 
-                    <Badge badgeContent={1} color="primary">
-                        <div className="header-icon-favorite">
-                            <img src={like} />
+                                <Badge badgeContent={1} color="primary">
+                                    <div className="header-icon-favorite">
+                                        <img src={like} />
+                                    </div>
+                                </Badge>
+                                <Badge badgeContent={1} color="primary">
+                                    <div className="header-icon-cart">
+                                        <img src={cart} />
+                                    </div>
+                                </Badge>
+                                <div className="header-icon-user">
+                                    <img src={user} />
+                                </div>
+                            </div>
                         </div>
-                    </Badge>
-                    <Badge badgeContent={1} color="primary">
-                        <div className="header-icon-cart">
-                            <img src={cart} />
-                        </div>
-                    </Badge>
-                    <div className="header-icon-user">
-                        <img src={user} />
-                    </div>
                     </div>
                 </div>
-            </div>
+                :
+                <div className="header-three">
+
+                    <div className="container">
+                        <div className="header-three-flex">
+                            <div className="header-three-logo">
+                                <img src={logo} />
+                            </div>
+                            <div className="header-katalog-btn">
+                                <img src={menu} />
+                                <div className="catalog-menu-title">Каталог</div>
+                            </div>
+                            <div className="header-search">
+                                <input type="text" />
+                                <img src={search} />
+                            </div>
+                            <div className="header-tel">
+                                +38093-717-29-29
+                            </div>
+
+                            <Badge badgeContent={1} color="primary">
+                                <div className="header-icon-favorite">
+                                    <img src={like} />
+                                </div>
+                            </Badge>
+                            <Badge badgeContent={1} color="primary">
+                                <div className="header-icon-cart">
+                                    <img src={cart} />
+                                </div>
+                            </Badge>
+                            <div className="header-icon-user">
+                                <img src={user} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            }
 
             <div className="header-fourth">
                 <div className="container">
-                <div className="navbar-link">
-                    <div onClick={() => setNavBtn(1)} className={(navbtn === 1 && ("active") + (" nav-link"))}>
-                        <Link to="" >Харьков мебель</Link>
+                    <div className="navbar-link">
+                        <div onClick={() => setNavBtn(1)} className={(navbtn === 1 && ("active") + (" nav-link"))}>
+                            <Link to="" >Главная</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(2)} className={(navbtn === 2 && ("active") + (" nav-link"))}>
+                            <Link to="" >Про нас</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(3)} className={(navbtn === 3 && ("active") + (" nav-link"))}>
+                            <Link to="">Техника под заказ</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(4)} className={(navbtn === 4 && ("active") + (" nav-link"))}>
+                            <Link to="">Шкафы купе</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(5)} className={navbtn === 5 && ("active") + (" nav-link")}>
+                            <Link to="">Доставка і оплата</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(6)} className={(navbtn === 6 && ("active") + (" nav-link"))}>
+                            <Link to="">Контакты</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(7)} className={(navbtn === 7 && ("active") + (" nav-link"))}>
+                            <Link to="">Письмо директору</Link>
+                        </div>
+                        <div onClick={() => setNavBtn(8)} className={(navbtn === 8 && ("active") + (" nav-link"))}>
+                            <Link to="">Бренды</Link>
+                        </div>
                     </div>
-                    <div onClick={() => setNavBtn(2)} className={(navbtn === 2 && ("active") + (" nav-link"))}>
-                        <Link to="" >Про нас</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(3)} className={(navbtn === 3 && ("active") + (" nav-link"))}>
-                        <Link to="">Мебель под заказ</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(4)} className={(navbtn === 4 && ("active") + (" nav-link"))}>
-                        <Link to="">Шкафы купе</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(5)} className={navbtn === 5 && ("active") + (" nav-link")}>
-                        <Link to="">Доставка і оплата</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(6)} className={(navbtn === 6 && ("active") + (" nav-link"))}>
-                        <Link to="">Контакты</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(7)} className={(navbtn === 7 && ("active") + (" nav-link"))}>
-                        <Link to="">Письмо директору</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(8)} className={(navbtn === 8 && ("active") + (" nav-link"))}>
-                        <Link to="">Бренды</Link>
-                    </div>
-                    <div onClick={() => setNavBtn(9)} className={(navbtn === 9 && ("active") + (" nav-link"))}>
-                        <Link to="">Дизайн интерьера</Link>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

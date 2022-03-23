@@ -1,7 +1,7 @@
 .aksiya{
     background-color: #F7F7F7;
     border-radius: 4px;
-    width: 500px;
+    width: 100%;
     height: 200px;
     overflow: hidden;
 }
@@ -10,7 +10,7 @@
 }
 .aksiya-row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .aksiya-content{
     width: 200px;
@@ -22,6 +22,11 @@
     color: #000;
     font-size: 18px;
     font-weight: bold;
+}
+.aksiya-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
 }
 .aksiya-button{
     background-color: #9B83FC;

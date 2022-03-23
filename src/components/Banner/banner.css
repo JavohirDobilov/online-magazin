@@ -7,9 +7,26 @@
     border-radius: 12px;
     /* padding: 10px 0; */
 }
-.banner-item-body{
-    /* background-color: aquamarine; */
+.banner-item{
+   position: relative;
+   border-radius: 12px;
     
+}
+.banner-content-title{
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 24px;
+    color: white;
+}
+.banner-content-text{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 16px;
+    color: white;
+
 }
 .banner-image img{
     width: 100%;
@@ -47,11 +64,11 @@
     top: 50%;
 }
 .banner-prev-style{
-    background-color: white;
+    background-color: transparent;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: none;
+    border: 1px solid white;
 }
 .banner-next{
     position: absolute;
@@ -59,9 +76,9 @@
     top: 50%;
 }
 .banner-next-style{
-    background-color: white;
+    background-color: transparent;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: none;
+    border: 1px solid white;
 }
