@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Footer/footer.css"
-import logo from '../../img/logo2.svg';
+import logo from '../../img/logoExp.svg';
 import call from '../../img/Call.svg';
 import location from '../../img/Location.svg';
 import message from '../../img/message.svg';
@@ -136,7 +136,7 @@ const Footer = () => {
 
         <div className='footer-copyryter'>
           <div className='footer-copyryter'>
-            ©"Kharkivmebel, 2005 - 2021.
+            ©"Kharkivmagazin, 20015 - 2022.
           </div>
           <div className='footer-payments'>
             <img src={payments} />

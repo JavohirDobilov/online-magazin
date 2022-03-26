@@ -213,6 +213,17 @@ const HomePage = () => {
                     </div>
                 </div>
 
+                <div className='home-aksiya-content'>
+                    <div className='home-aksiya-content-title'>
+                        Новости и акции
+                    </div>
+                    <div className='home-aksiya-content-box'>
+                        <div className='home-aksiya-content-box-1'>
+                            <Aksiya />
+                        </div>
+                    </div>
+                </div>
+
                 <div className='home-xit-prodaj'>
                     <div className='home-xit-prodaj-title'>
                         Наши Новинки
@@ -237,16 +248,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='home-aksiya-content'>
-                    <div className='home-aksiya-content-title'>
-                        Новости и акции
-                    </div>
-                    <div className='home-aksiya-content-box'>
-                        <div className='home-aksiya-content-box-1'>
-                            <Aksiya />
-                        </div>
-                    </div>
-                </div>
+               
 
                 <Podrasilka/>
 

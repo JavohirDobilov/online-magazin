@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState } from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ProductsList from "./pages/ProductsList/ProductsList"
 import HomePage from "./pages/HomePage/HomePage";
 import ProductCard from "./components/ProductCard/ProductCard";
 import Aksiya from "./components/Aksiya/Aksiya"
@@ -12,7 +13,7 @@ function App() {
 
   useLayoutEffect(()=>{
     const handleScroll =()=> {
-      setScroll(window.scrollY>140)
+      setScroll(window.scrollY>0)
     }
     window.addEventListener("scroll", handleScroll)
 
@@ -21,7 +22,8 @@ function App() {
   return (
     <>
       <Header scroll={scroll}/>
-      <HomePage/>
+      {/* <HomePage/> */}
+      <ProductsList/>
       <Footer/>
     </>
   );

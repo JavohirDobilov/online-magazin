@@ -27,7 +27,7 @@ const Header = ({ scroll }) => {
                     <div className="header-icon-truck">
                         <img src={truck} />
                     </div>
-                    <div className="header-truck-text">Доставка и сборка по Харькову бесплатно! </div>
+                    <div className="header-truck-text">Доставка и сборка по Украину бесплатно! </div>
 
                 </div>
             </div>
