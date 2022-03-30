@@ -11,11 +11,8 @@
     width: 100%;
     position: fixed;
     background-color: #f0f0f0;
-    z-index: 1;
-}
-.container{
-    width: 1320px;
-    margin: auto;
+    z-index: 10;
+
 }
 
 .header_notification{
@@ -24,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .header-icon-truck{
     display: flex;

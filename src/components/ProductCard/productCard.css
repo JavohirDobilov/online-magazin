@@ -15,7 +15,7 @@
     border-radius: 50%;
     padding:4px;
     transition: 0.5s ease;
-    z-index: 100000;
+    z-index: 2;
 }
 .product-icon-favorite:hover img{
     position: absolute;
@@ -39,7 +39,7 @@
     border-radius: 50%;
     padding:4px;
     transition: 0.5s ease;
-    z-index: 1000;
+    z-index:2;
 }
 .product-icon-cart:hover img{
     position: absolute;

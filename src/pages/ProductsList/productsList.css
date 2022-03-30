@@ -1,3 +1,17 @@
 .productlist{
     padding: 50px 0;
 }
+.right-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-container-full{
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-product-sidebar{
+    display: flex;
+    justify-content: space-between;
+}

@@ -22,4 +22,9 @@ body::-webkit-scrollbar-thumb{
   text-align: center;
 }
 
+.container{
+  width: 1320px;
+  margin: auto;
+}
+
 

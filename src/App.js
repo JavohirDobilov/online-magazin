@@ -6,6 +6,7 @@ import ProductsList from "./pages/ProductsList/ProductsList"
 import HomePage from "./pages/HomePage/HomePage";
 import ProductCard from "./components/ProductCard/ProductCard";
 import Aksiya from "./components/Aksiya/Aksiya"
+import OrdersPage from "./pages/MyOrdersPage/OrdersPage";
 
 function App() {
 
@@ -22,8 +23,10 @@ function App() {
   return (
     <>
       <Header scroll={scroll}/>
-      {/* <HomePage/> */}
+      
+      <HomePage/>
       <ProductsList/>
+      <OrdersPage/>
       <Footer/>
     </>
   );

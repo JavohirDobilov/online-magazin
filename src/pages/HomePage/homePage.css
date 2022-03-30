@@ -67,7 +67,7 @@
 }
 .home-next-1 img{
     width: 20px;
-    height: 20px;
+    height: 20px; 
 }
 .home-prev-1{
     display: flex;
@@ -109,4 +109,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}  
