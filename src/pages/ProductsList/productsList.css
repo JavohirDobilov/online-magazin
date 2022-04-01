@@ -4,14 +4,15 @@
 .right-row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .products-container-full{
   width: 33.3%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 .row-product-sidebar{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
