@@ -18,6 +18,13 @@ import { Link } from "react-router-dom";
 const Header = ({ scroll }) => {
 
     const [navbtn, setNavBtn] = useState(1);
+
+    const [isActive, setIsActive] = useState(false);
+    const handleClick = () =>{
+        if(!isActive){
+            setIsActive(isActive)
+        }
+    }
     return (
         <div className="header">
 
@@ -60,7 +67,7 @@ const Header = ({ scroll }) => {
                                 <div className="header-three-logo">
                                     <img src={logo} />
                                 </div>
-                                <div className="header-katalog-btn">
+                                <div onclick={handleClick} className={isActive==true ? (("active")+(" header-katalog-btn")):("header-katalog-btn")}>
                                     <img src={menu} />
                                     <Link to="/products"><div className="catalog-menu-title">Каталог</div></Link>
                                 </div>

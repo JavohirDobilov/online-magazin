@@ -6,7 +6,7 @@
     "products":[
         {
             "id": 1,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101555.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "oldPrice": "40 990 ₽",
@@ -16,26 +16,26 @@
           },
           {
             "id": 2,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101546.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
-            "companiy":"LG",
+            "companiy":"Avalon",
             "vid":"Без морозильной камеры",
             "camera":"Снизу"
           },
           {
             "id": 3,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101536.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "oldPrice": "40 990 ₽",
-            "companiy":"LG",
+            "companiy":"Artel",
             "vid":"С морозильной камерой",
             "camera":"Сверху"
           },
           {
             "id": 4,
-            "image": "xitpro4",
+            "image":"https://pngimg.com/uploads/refrigerator/refrigerator_PNG9048.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "companiy":"LG",
@@ -43,24 +43,24 @@
             "camera":"Отсутствует"
           }, {
             "id": 5,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9046.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "oldPrice": "40 990 ₽",
-            "companiy":"LG",
+            "companiy":"Samsung",
             "vid":"С морозильной камерой",
             "camera":"Сбоку"
           }, {
             "id": 6,
-            "image": "xitpro4",
+            "image":  "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9044.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
-            "companiy":"LG",
+            "companiy":"Samsung",
             "vid":"Без морозильной камеры",
             "camera":"Сбоку"
           }, {
             "id": 7,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9042.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "companiy":"LG",
@@ -69,7 +69,7 @@
           },
           {
             "id": 8,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9041.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "oldPrice": "40 990 ₽",
@@ -79,19 +79,28 @@
           },
           {
             "id": 9,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9033.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
-            "companiy":"LG",
+            "companiy":"Artel",
             "vid":"С морозильной камерой",
             "camera":"Сбоку"
           },
           {
             "id": 10,
-            "image": "xitpro4",
+            "image": "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9028.png",
             "title": "Диван Ergonomic Rubber Shoes",
             "price": "35 990 ₽",
             "companiy":"LG",
+            "vid":"Без морозильной камеры",
+            "camera":"Снизу"
+          },
+          {
+            "id": 11,
+            "image": " https://pngimg.com/uploads/refrigerator/refrigerator_PNG101553.png",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"Avalon",
             "vid":"Без морозильной камеры",
             "camera":"Снизу"
           }

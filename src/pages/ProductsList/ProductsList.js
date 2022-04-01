@@ -1,111 +1,103 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import "../ProductsList/productsList.css"
-import xitpro4 from "../../img/xitpro/3.png"
+import { filteredProducts } from '../../utils/filterSortProducts'
+
 
 import ProductFilterSidebar from '../../components/ProductFilterBar/ProductFilterBar'
 import ProductCard from '../../components/ProductCard/ProductCard'
-import { useState } from "react"
+import { useState, useEffect} from "react"
+import axios from 'axios'
 
 const ProductsList = () => {
 
-  const [filtersCheck, setFiltersCheck] = useState([])
+  const [products, setProducts] = useState([])
+  
+  const [vid,setVid] = useState([])
+  const [companies, setCompanies] = useState([])
+  const [cameras,setCameras] = useState([])
 
- console.log(filtersCheck);
-  const handleCheck = (item,filtersCheck)=>{
+  const [vidFilter,setVidFilter] = useState([])
+  const [companiesFilter, setCompaniesFilter] = useState([])
+  const [camerasFilter,setCamerasFilter] = useState([])
+
+  async function getData (){
+    await axios.get("https://amock.io/api/Javohirlal./xolodil")
+    .then(response => {
+      setProducts(response.data.products)
+      setCameras(response.data.cameras)
+      setVid(response.data.vids)
+      setCompanies(response.data.companies)
+      // console.log(response.data.cameras)
+      // console.log(response.data)
+    })
+  }
+
+  useEffect(() =>{
+    getData()
+  },[])
+
+ 
+
+
+  const handleCompaniesCheck = (item,companiesFilter)=>{
     
-    if(filtersCheck.includes(item)){
-      const newFiltersCheck = [...filtersCheck]
+    if(companiesFilter.includes(item)){
+      const newFiltersCheck = [...companiesFilter]
       const index = newFiltersCheck.indexOf(item)
       newFiltersCheck.splice(index,1)
-      setFiltersCheck(newFiltersCheck)
+      setCompaniesFilter(newFiltersCheck)
     }else{
-      setFiltersCheck([...filtersCheck,item])
+      setCompaniesFilter([...companiesFilter,item])
+    }
+  }
+  const handleVidCheck = (item,vidFilter)=>{
+    
+    if(vidFilter.includes(item)){
+      const newFiltersCheck = [...vidFilter]
+      const index = newFiltersCheck.indexOf(item)
+      newFiltersCheck.splice(index,1)
+      setVidFilter(newFiltersCheck)
+    }else{
+      setVidFilter([...vidFilter,item])
+    }
+  }
+  const handleCamerasCheck = (item,camerasFilterk)=>{
+    
+    if(camerasFilter.includes(item)){
+      const newFiltersCheck = [...camerasFilter]
+      const index = newFiltersCheck.indexOf(item)
+      newFiltersCheck.splice(index,1)
+      setCamerasFilter(newFiltersCheck)
+    }else{
+      setCamerasFilter([...camerasFilter,item])
     }
   }
 
-  const products = [
-    {
-      id: 1,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101555.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽",
-      oldPrice: "40 990 ₽"
-    },
-    {
-      id: 2,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101546.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽"
-    },
-    {
-      id: 3,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101536.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽",
-      oldPrice: "40 990 ₽"
-    },
-    {
-      id: 4,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9048.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽"
-    }, {
-      id: 5,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9046.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽",
-      oldPrice: "40 990 ₽"
-    }, {
-      id: 6,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9044.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽"
-    }, {
-      id: 7,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9042.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽"
-    },
-    {
-      id: 8,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9041.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽",
-      oldPrice: "40 990 ₽"
-    },
-    {
-      id: 9,
-      image:"https://pngimg.com/uploads/refrigerator/refrigerator_PNG9033.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽"
-    },
-    {
-      id: 10,
-      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9028.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-     
-      price: "35 990 ₽"
-    },
-    {
-      id: 11,
-      image: " https://pngimg.com/uploads/refrigerator/refrigerator_PNG101553.png",
-      title: 'Диван "Ergonomic Rubber Shoes”',
-      price: "35 990 ₽",
-      oldPrice: "40 990 ₽"
-    },
+  const filterCheck = {
+    handleCamerasCheck, 
+    handleVidCheck,
+    handleCompaniesCheck,
+    vidFilter, camerasFilter, companiesFilter,
+    vid, cameras, companies
     
-  ];
+  }
+
+
+  
+  const filterPro  = useMemo(
+    () => filteredProducts(products,vidFilter,companiesFilter,camerasFilter)
+  ,[products,vidFilter,companiesFilter,camerasFilter])
 
   return (
     <div className='productlist'>
       <div className='container'>
         <div className='row-product-sidebar'>
           <div className='left-row'>
-            <ProductFilterSidebar state={filtersCheck} handleCheck={handleCheck}/>
+            <ProductFilterSidebar {...filterCheck}/>
           </div>
 
           <div className='right-row'>
-            {products.map(item => (
+            {filterPro.map(item => (
               <div key={item.id} className='products-container-full'>
                 <ProductCard product={item} />
               </div>

@@ -8,11 +8,11 @@ import { ImCheckmark } from "react-icons/im";
 
 
 
-const ProductFilterSidebar = ({state,handleCheck}) => {
-
-    const brendOptions = ["Atlant", "Samsung", "LG", "Persone", "Liebherr"]
-    const vid = ['С морозильной камерой', 'Без морозильной камеры']
-    const camera = ["Сбоку", "Снизу", "Сверху", "Отсутствует"]
+const ProductFilterSidebar = (...props) => {
+    const {handleCamerasCheck, handleVidCheck,handleCompaniesCheck,} = props[0]
+    const {vid,cameras,companies} = props[0]
+    const {vidFilter, camerasFilter, companiesFilter} = props[0]
+   
 
 
    
@@ -25,15 +25,15 @@ const ProductFilterSidebar = ({state,handleCheck}) => {
             <div className='products-filtered-box'>
                 <div className='filtered-brand'>
                     <div className='filtered-brand-title'>
-                        Производитель (245)
+                        Производитель ({companies.length})
                     </div>
                     <div className='brand-dropdown'>
                         <img src='' />
                     </div>
 
-                    {brendOptions.map(item => (
+                    {companies.map(item => (
                         <div key={item} className='brand-checklist'>
-                            <div onClick={()=>handleCheck(item,state)} className={(state?.includes(item) && "active")+(" brand-check")}>
+                            <div onClick={()=>handleCompaniesCheck(item,companiesFilter)} className={(companiesFilter?.includes(item) && "active")+(" brand-check")}>
                                 <BiCheck color="white" />
                             </div>
                             <div className='brand-name'>
@@ -45,11 +45,11 @@ const ProductFilterSidebar = ({state,handleCheck}) => {
 
                 <div className='products-vid'>
                     <div className='products-filterd-title'>
-                        Вид холодильника (245)
+                        Вид холодильника ({vid.length})
                     </div>
                     {vid.map(item => (
                         <div key={item} className='brand-checklist'>
-                            <div onClick={()=>handleCheck(item,state)} className={(state?.includes(item) && "active") + (" brand-check")}>
+                            <div onClick={()=>handleVidCheck(item,vidFilter)} className={(vidFilter?.includes(item) && "active") + (" brand-check")}>
                                 <BiCheck color="white"/>
                             </div>
                             <div className='brand-name'>
@@ -63,11 +63,11 @@ const ProductFilterSidebar = ({state,handleCheck}) => {
 
                 <div className='products-kamera'>
                     <div className='products-filterd-title'>
-                        Морозильная камера 
+                        Морозильная камера ({cameras.length})
                     </div>
-                    {camera.map(item => (
+                    {cameras.map(item => (
                         <div key={item} className='brand-checklist'>
-                            <div onClick={()=>handleCheck(item,state)} className={(state?.includes(item) && "active")+(" brand-check")}>
+                            <div onClick={()=>handleCamerasCheck(item,camerasFilter)} className={(camerasFilter?.includes(item) && "active")+(" brand-check")}>
                                 <BiCheck color="white" />
                             </div>
                             <div className='brand-name'>
