@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
+import {Route,Routes} from "react-router-dom";
 import './App.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -23,10 +24,13 @@ function App() {
   return (
     <>
       <Header scroll={scroll}/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/products" element={<ProductsList/>}/>
+        <Route path="/cart" element={<OrdersPage/>}/>
+      </Routes>
       
-      <HomePage/>
-      <ProductsList/>
-      <OrdersPage/>
+     
       <Footer/>
     </>
   );

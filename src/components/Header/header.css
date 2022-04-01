@@ -3,15 +3,18 @@
     transition: 0.9s ease;
     width: 100%;
     
-    z-index: 2;
+    z-index: 30;
     
+}
+a{
+    text-decoration: none;
 }
 .header-scroll{
     top: 0;
     width: 100%;
     position: fixed;
     background-color: #f0f0f0;
-    z-index: 10;
+    z-index:40;
 
 }
 

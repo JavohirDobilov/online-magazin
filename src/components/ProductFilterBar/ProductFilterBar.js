@@ -17,9 +17,7 @@ const ProductFilterSidebar = ({state,handleCheck}) => {
 
    
 
-    const handleChange = (value) => {
-        setInputValue({ min: value[0], max: value[1] })
-    }
+    
     // console.log(inputValue)
 
     return (
@@ -44,28 +42,6 @@ const ProductFilterSidebar = ({state,handleCheck}) => {
                         </div>
                     ))}
                 </div>
-
-                {/* <div className='products-pricing'>
-                    <div className='products-filterd-title'>
-                        Цена
-                    </div>
-                    <Col span={4}>
-                        <Slider
-                            min={1}
-                            max={100000}
-                            onChange={handleChange}
-                            range defaultValue={[0, 1000000]}
-                        />
-
-                    </Col>
-                    <div className='limit-value-pricing'>
-                        oт {inputValue.min} ruble
-                        <br></br>
-                        до {inputValue.max} ruble
-
-                    </div>
-
-                </div> */}
 
                 <div className='products-vid'>
                     <div className='products-filterd-title'>

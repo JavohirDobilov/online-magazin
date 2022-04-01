@@ -26,65 +26,74 @@ const ProductsList = () => {
   const products = [
     {
       id: 1,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101555.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽",
       oldPrice: "40 990 ₽"
     },
     {
       id: 2,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101546.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽"
     },
     {
       id: 3,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG101536.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽",
       oldPrice: "40 990 ₽"
     },
     {
       id: 4,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9048.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽"
     }, {
       id: 5,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9046.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽",
       oldPrice: "40 990 ₽"
     }, {
       id: 6,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9044.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽"
     }, {
       id: 7,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9042.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽"
     },
     {
       id: 8,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9041.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽",
       oldPrice: "40 990 ₽"
     },
     {
       id: 9,
-      image: xitpro4,
+      image:"https://pngimg.com/uploads/refrigerator/refrigerator_PNG9033.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
       price: "35 990 ₽"
     },
     {
       id: 10,
-      image: xitpro4,
+      image: "https://pngimg.com/uploads/refrigerator/refrigerator_PNG9028.png",
       title: 'Диван "Ergonomic Rubber Shoes”',
+     
       price: "35 990 ₽"
-    }
+    },
+    {
+      id: 11,
+      image: " https://pngimg.com/uploads/refrigerator/refrigerator_PNG101553.png",
+      title: 'Диван "Ergonomic Rubber Shoes”',
+      price: "35 990 ₽",
+      oldPrice: "40 990 ₽"
+    },
+    
   ];
 
   return (

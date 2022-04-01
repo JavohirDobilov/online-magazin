@@ -62,7 +62,7 @@ const Header = ({ scroll }) => {
                                 </div>
                                 <div className="header-katalog-btn">
                                     <img src={menu} />
-                                    <div className="catalog-menu-title">Каталог</div>
+                                    <Link to="/products"><div className="catalog-menu-title">Каталог</div></Link>
                                 </div>
                                 <div className="header-search">
                                     <input type="text" />
@@ -79,7 +79,7 @@ const Header = ({ scroll }) => {
                                 </Badge>
                                 <Badge badgeContent={1} color="primary">
                                     <div className="header-icon-cart">
-                                        <img src={cart} />
+                                    <Link to="/cart"><img src={cart} /></Link>
                                     </div>
                                 </Badge>
                                 <div className="header-icon-user">
@@ -99,7 +99,7 @@ const Header = ({ scroll }) => {
                             </div>
                             <div className="header-katalog-btn">
                                 <img src={menu} />
-                                <div className="catalog-menu-title">Каталог</div>
+                                <Link to="/products"><div className="catalog-menu-title">Каталог</div></Link>
                             </div>
                             <div className="header-search">
                                 <input type="text" />
@@ -116,7 +116,7 @@ const Header = ({ scroll }) => {
                             </Badge>
                             <Badge badgeContent={1} color="primary">
                                 <div className="header-icon-cart">
-                                    <img src={cart} />
+                                    <Link to="/cart"><img src={cart} /></Link>
                                 </div>
                             </Badge>
                             <div className="header-icon-user">
@@ -132,7 +132,7 @@ const Header = ({ scroll }) => {
                 <div className="container">
                     <div className="navbar-link">
                         <div onClick={() => setNavBtn(1)} className={(navbtn === 1 && ("active") + (" nav-link"))}>
-                            <Link to="" >Главная</Link>
+                            <Link to="/" >Главная</Link>
                         </div>
                         <div onClick={() => setNavBtn(2)} className={(navbtn === 2 && ("active") + (" nav-link"))}>
                             <Link to="" >Про нас</Link>

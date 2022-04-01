@@ -1,0 +1,99 @@
+{
+    "title":"xolodilnik",
+    "companies":["LG","Artel","Samsung","Avalon"],
+    "vids":["С морозильной камерой", "Без морозильной камеры"],
+    "cameras":["Сбоку", "Снизу", "Сверху", "Отсутствует"],
+    "products":[
+        {
+            "id": 1,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "oldPrice": "40 990 ₽",
+            "companiy":"LG",
+            "vid":"С морозильной камерой",
+            "camera":"Сбоку"
+          },
+          {
+            "id": 2,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"LG",
+            "vid":"Без морозильной камеры",
+            "camera":"Снизу"
+          },
+          {
+            "id": 3,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "oldPrice": "40 990 ₽",
+            "companiy":"LG",
+            "vid":"С морозильной камерой",
+            "camera":"Сверху"
+          },
+          {
+            "id": 4,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"LG",
+            "vid":"Без морозильной камеры",
+            "camera":"Отсутствует"
+          }, {
+            "id": 5,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "oldPrice": "40 990 ₽",
+            "companiy":"LG",
+            "vid":"С морозильной камерой",
+            "camera":"Сбоку"
+          }, {
+            "id": 6,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"LG",
+            "vid":"Без морозильной камеры",
+            "camera":"Сбоку"
+          }, {
+            "id": 7,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"LG",
+            "vid":"С морозильной камерой",
+            "camera":"Сверху"
+          },
+          {
+            "id": 8,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "oldPrice": "40 990 ₽",
+            "companiy":"LG",
+            "vid":"Без морозильной камеры",
+            "camera":"Сбоку"
+          },
+          {
+            "id": 9,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"LG",
+            "vid":"С морозильной камерой",
+            "camera":"Сбоку"
+          },
+          {
+            "id": 10,
+            "image": "xitpro4",
+            "title": "Диван Ergonomic Rubber Shoes",
+            "price": "35 990 ₽",
+            "companiy":"LG",
+            "vid":"Без морозильной камеры",
+            "camera":"Снизу"
+          }
+    ]
+}
