@@ -45,7 +45,7 @@ const ProductFilterSidebar = (...props) => {
 
                 <div className='products-vid'>
                     <div className='products-filterd-title'>
-                        Вид холодильника ({vid.length})
+                       Продуктъ вид ({vid.length})
                     </div>
                     {vid.map(item => (
                         <div key={item} className='brand-checklist'>
@@ -63,7 +63,7 @@ const ProductFilterSidebar = (...props) => {
 
                 <div className='products-kamera'>
                     <div className='products-filterd-title'>
-                        Морозильная камера ({cameras.length})
+                        Продуктъ камера ({cameras.length})
                     </div>
                     {cameras.map(item => (
                         <div key={item} className='brand-checklist'>

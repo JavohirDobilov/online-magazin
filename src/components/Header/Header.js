@@ -11,6 +11,7 @@ import user from '../../img/Profile 1.svg';
 import '../Header/header.css';
 import Badge from '@mui/material/Badge';
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 
@@ -19,12 +20,16 @@ const Header = ({ scroll }) => {
 
     const [navbtn, setNavBtn] = useState(1);
 
-    const [isActive, setIsActive] = useState(false);
-    const handleClick = () =>{
-        if(!isActive){
-            setIsActive(isActive)
-        }
-    }
+   
+
+
+
+
+
+
+    const items = useSelector(state=>state.productsAll.cart)
+    const quantity = items.reduce((cc,item) =>cc+=+item.number,0)
+   
     return (
         <div className="header">
 
@@ -67,10 +72,12 @@ const Header = ({ scroll }) => {
                                 <div className="header-three-logo">
                                     <img src={logo} />
                                 </div>
-                                <div onclick={handleClick} className={isActive==true ? (("active")+(" header-katalog-btn")):("header-katalog-btn")}>
+                                <Link to="/products">
+                                <div className=" header-katalog-btn">
                                     <img src={menu} />
-                                    <Link to="/products"><div className="catalog-menu-title">Каталог</div></Link>
+                                   <div className="catalog-menu-title">Каталог</div>
                                 </div>
+                                </Link>
                                 <div className="header-search">
                                     <input type="text" />
                                     <img src={search} />
@@ -84,7 +91,7 @@ const Header = ({ scroll }) => {
                                         <img src={like} />
                                     </div>
                                 </Badge>
-                                <Badge badgeContent={1} color="primary">
+                                <Badge badgeContent={quantity} color="primary">
                                     <div className="header-icon-cart">
                                     <Link to="/cart"><img src={cart} /></Link>
                                     </div>
@@ -104,10 +111,12 @@ const Header = ({ scroll }) => {
                             <div className="header-three-logo">
                                 <img src={logo} />
                             </div>
-                            <div className="header-katalog-btn">
-                                <img src={menu} />
-                                <Link to="/products"><div className="catalog-menu-title">Каталог</div></Link>
-                            </div>
+                            <Link to="/products">
+                                <div className=" header-katalog-btn">
+                                    <img src={menu} />
+                                   <div className="catalog-menu-title">Каталог</div>
+                                </div>
+                                </Link>
                             <div className="header-search">
                                 <input type="text" />
                                 <img src={search} />
@@ -121,7 +130,7 @@ const Header = ({ scroll }) => {
                                     <img src={like} />
                                 </div>
                             </Badge>
-                            <Badge badgeContent={1} color="primary">
+                            <Badge badgeContent={quantity} color="primary">
                                 <div className="header-icon-cart">
                                     <Link to="/cart"><img src={cart} /></Link>
                                 </div>

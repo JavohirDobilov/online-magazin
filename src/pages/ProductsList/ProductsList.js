@@ -11,6 +11,7 @@ import axios from 'axios'
 const ProductsList = () => {
 
   const [products, setProducts] = useState([])
+  const [title,setTitle] = useState("")
   
   const [vid,setVid] = useState([])
   const [companies, setCompanies] = useState([])
@@ -21,12 +22,13 @@ const ProductsList = () => {
   const [camerasFilter,setCamerasFilter] = useState([])
 
   async function getData (){
-    await axios.get("https://amock.io/api/Javohirlal./xolodil")
+    await axios.get("https://amock.io/api/Javohirlal./haladilnik")
     .then(response => {
       setProducts(response.data.products)
       setCameras(response.data.cameras)
       setVid(response.data.vids)
       setCompanies(response.data.companies)
+      setTitle(response.data.title)
       // console.log(response.data.cameras)
       // console.log(response.data)
     })
@@ -91,7 +93,11 @@ const ProductsList = () => {
   return (
     <div className='productlist'>
       <div className='container'>
+        <div className="title-product">
+        {title}
+        </div>
         <div className='row-product-sidebar'>
+          
           <div className='left-row'>
             <ProductFilterSidebar {...filterCheck}/>
           </div>
