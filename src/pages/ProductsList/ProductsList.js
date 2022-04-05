@@ -22,7 +22,7 @@ const ProductsList = () => {
   const [camerasFilter,setCamerasFilter] = useState([])
 
   async function getData (){
-    await axios.get("https://amock.io/api/Javohirlal./haladilnik")
+    await axios.get("https://my.api.mockaroo.com/holodilnik?key=d18c9640")
     .then(response => {
       setProducts(response.data.products)
       setCameras(response.data.cameras)
