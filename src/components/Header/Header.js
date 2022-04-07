@@ -147,28 +147,28 @@ const Header = ({ scroll }) => {
             <div className="header-fourth">
                 <div className="container">
                     <div className="navbar-link">
-                        <div onClick={() => setNavBtn(1)} className={(navbtn === 1 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(1)} className={(navbtn === 1 && "active") + (" nav-link")}>
                             <Link to="/" >Главная</Link>
                         </div>
-                        <div onClick={() => setNavBtn(2)} className={(navbtn === 2 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(2)} className={(navbtn === 2 && "active") + (" nav-link")}>
                             <Link to="" >Про нас</Link>
                         </div>
-                        <div onClick={() => setNavBtn(3)} className={(navbtn === 3 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(3)} className={(navbtn === 3 && "active") + (" nav-link")}>
                             <Link to="">Техника под заказ</Link>
                         </div>
-                        <div onClick={() => setNavBtn(4)} className={(navbtn === 4 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(4)} className={(navbtn === 4 && "active") + (" nav-link")}>
                             <Link to="">Шкафы купе</Link>
                         </div>
-                        <div onClick={() => setNavBtn(5)} className={navbtn === 5 && ("active") + (" nav-link")}>
+                        <div onClick={() => setNavBtn(5)} className={(navbtn === 5 && "active") + (" nav-link")}>
                             <Link to="">Доставка і оплата</Link>
                         </div>
-                        <div onClick={() => setNavBtn(6)} className={(navbtn === 6 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(6)} className={(navbtn === 6 && "active") + (" nav-link")}>
                             <Link to="">Контакты</Link>
                         </div>
-                        <div onClick={() => setNavBtn(7)} className={(navbtn === 7 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(7)} className={(navbtn === 7 && "active") + (" nav-link")}>
                             <Link to="">Письмо директору</Link>
                         </div>
-                        <div onClick={() => setNavBtn(8)} className={(navbtn === 8 && ("active") + (" nav-link"))}>
+                        <div onClick={() => setNavBtn(8)} className={(navbtn === 8 && "active") + (" nav-link")}>
                             <Link to="">Бренды</Link>
                         </div>
                     </div>

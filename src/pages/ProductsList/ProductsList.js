@@ -63,7 +63,7 @@ const ProductsList = () => {
       setVidFilter([...vidFilter,item])
     }
   }
-  const handleCamerasCheck = (item,camerasFilterk)=>{
+  const handleCamerasCheck = (item,camerasFilter)=>{
     
     if(camerasFilter.includes(item)){
       const newFiltersCheck = [...camerasFilter]
@@ -86,7 +86,7 @@ const ProductsList = () => {
 
 
   
-  const filterPro  = useMemo(
+  const filterPro  = useMemo( 
     () => filteredProducts(products,vidFilter,companiesFilter,camerasFilter)
   ,[products,vidFilter,companiesFilter,camerasFilter])
 
