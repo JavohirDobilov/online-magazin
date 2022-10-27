@@ -13,14 +13,10 @@ const OrdersPage = () => {
 
 
   const dispatch = useDispatch()
-  const localOrder = JSON.parse(localStorage.getItem("order"))
+
 
   useEffect(()=>{
-    if(localOrder){
-      localOrder.forEach(items =>{
-        dispatch(addProduct(items))
-      })
-    }
+
   },[])
 
   const orderItems = useSelector(state => state.productsAll.cart)
