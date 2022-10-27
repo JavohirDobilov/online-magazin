@@ -16,14 +16,14 @@ export const cartReducer = (state = initialState, action) => {
             if (state.cart.includes(item)) {
                 const index = state.cart.indexOf(item)
                 state.cart[index].number++
-                localStorage.setItem("order", JSON.stringify(state.cart))
+
                 return {
                     ...state,
                     cart: [...state.cart]
                 }
             } else {
                 item.number++
-                localStorage.setItem("order", JSON.stringify(state.cart))
+
                 return {
                     ...state,
                     cart: [...state.cart, item]
@@ -31,7 +31,7 @@ export const cartReducer = (state = initialState, action) => {
             }
 
         case ActionType.DELETE_PRODUCT:
-            localStorage.setItem("order", JSON.stringify(state.cart))
+
             return {
                 ...state,
                 cart: [...state.cart].filter(item => item.id !== action.payload.id)
@@ -39,7 +39,7 @@ export const cartReducer = (state = initialState, action) => {
         case ActionType.INCREMENT:
             const index = state.cart.indexOf(action.payload)
             state.cart[index].number++
-            localStorage.setItem("order", JSON.stringify(state.cart))
+
             return {
                 ...state,
                 cart: [...state.cart]
@@ -51,13 +51,13 @@ export const cartReducer = (state = initialState, action) => {
             if (state.cart[indexs].number > 1) {
                 const indexs = state.cart.indexOf(action.payload)
                 state.cart[indexs].number--
-                localStorage.setItem("order", JSON.stringify(state.cart))
+
                 return {
                     ...state,
                     cart: [...state.cart]
                 }
             } else {
-                localStorage.setItem("order", JSON.stringify(state.cart))
+
                 return {
                     ...state,
                     cart: [...state.cart].filter(item => item.id !== action.payload.id)
